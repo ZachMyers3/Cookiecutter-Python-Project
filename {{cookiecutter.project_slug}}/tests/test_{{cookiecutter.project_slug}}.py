@@ -18,7 +18,6 @@ from {{ cookiecutter.project_slug }} import cli
 
 {%- if cookiecutter.use_pytest == 'y' %}
 
-
 @pytest.fixture
 def response():
     """Sample pytest fixture.
@@ -45,8 +44,7 @@ def test_command_line_interface():
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
     assert '--help  Show this message and exit.' in help_result.output
-{%- endif %}
-{%- else %}
+
 
 
 class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
@@ -71,5 +69,4 @@ class Test{{ cookiecutter.project_slug|title }}(unittest.TestCase):
         help_result = runner.invoke(cli.main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
-{%- endif %}
 {%- endif %}

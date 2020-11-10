@@ -9,7 +9,7 @@ Features
 
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
 * bump2version_: Pre-configured version bumping with a single command
-* Command line interface using Click (optional)
+* Command line interface using Typer
 
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 
