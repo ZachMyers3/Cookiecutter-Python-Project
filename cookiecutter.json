@@ -7,12 +7,6 @@
   "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
   "version": "0.1.0",
   "use_pytest": "y",
-  "command_line_interface": [
-    "Typer",
-    "Click",
-    "Argparse",
-    "No command-line interface"
-  ],
   "create_author_file": "y",
   "open_source_license": [
     "MIT license",
