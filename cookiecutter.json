@@ -4,6 +4,7 @@
   "github_username": "zachmyers",
   "project_name": "Python Boilerplate",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+  "project_underscore": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('-', '_') }}",
   "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
   "version": "0.1.0",
   "use_pytest": "y",

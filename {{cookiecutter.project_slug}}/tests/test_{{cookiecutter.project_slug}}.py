@@ -10,7 +10,8 @@ import unittest
 import typer
 from typer.testing import CliRunner
 
-from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
+from {{ cookiecutter.project_underscore }} import {{ cookiecutter.project_underscore }}
+from {{ cookiecutter.project_underscore }}.cli import command
 
 {%- if cookiecutter.use_pytest == 'y' %}
 
