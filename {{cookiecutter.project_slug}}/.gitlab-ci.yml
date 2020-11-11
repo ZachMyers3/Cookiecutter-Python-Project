@@ -6,8 +6,8 @@ test:
   script:
     - python3 -m pip install poetry
     - poetry install --no-root
-    - poetry run black --check --config pyproject.toml app/
+    - poetry run black --check --config pyproject.toml {{cookiecutter.project_underscore}}/
     - poetry run black --check --config pyproject.toml tests/
-    - poetry run flake8 app/ --count --select=E9,F63,F7,F82 --show-source --statistics
+    - poetry run flake8 {{cookiecutter.project_underscore}}/ --count --select=E9,F63,F7,F82 --show-source --statistics
     - poetry run flake8 tests/ --count --select=E9,F63,F7,F82 --show-source --statistics
     - poetry run pytest
