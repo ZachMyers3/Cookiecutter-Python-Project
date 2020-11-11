@@ -23,6 +23,15 @@ $ poetry run cli --help
 $ poetry run python {{ cookiecutter.project_slug }}/cli.py --help
 ```
 
+## Running Tests Using Pytest
+
+```bash
+# install dependencies (if needed)
+$ poetry install
+# run pytest through poetry
+$ poetry run pytest
+```
+
 ## Building CLI Executable
 
 ```bash
