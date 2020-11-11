@@ -2,18 +2,13 @@
 
 """Tests for `{{ cookiecutter.project_slug }}` package."""
 
-{% if cookiecutter.use_pytest == 'y' -%}
 import pytest
-{% else %}
-import unittest
-{%- endif %}
 import typer
 from typer.testing import CliRunner
 
 from {{ cookiecutter.project_underscore }} import {{ cookiecutter.project_underscore }}
 from {{ cookiecutter.project_underscore }}.cli import command
 
-{%- if cookiecutter.use_pytest == 'y' %}
 
 @pytest.fixture
 def response():
@@ -41,4 +36,3 @@ def test_command_line_interface():
     runner = CliRunner()
     result = runner.invoke(app, [])
     assert result.exit_code == 0
-{%- endif %}
