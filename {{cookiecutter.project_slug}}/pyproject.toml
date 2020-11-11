@@ -68,7 +68,7 @@ bump2version = "^1.0.1"
 pyinstaller = "^4.0"
 
 [tool.poetry.scripts]
-cli = '{{ cookiecutter.project_slug }}.cli:main'
+cli = '{{ cookiecutter.project_underscore }}.cli:main'
 
 [[tool.poetry.source]]
 name = "wbc"
