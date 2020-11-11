@@ -4,9 +4,13 @@ app = typer.Typer()
 
 
 @app.command()
-def main() -> None:
+def command() -> None:
     pass
 
 
-if __name__ == "__main__":
+def main():
     app()
+
+
+if __name__ == "__main__":
+    main()
