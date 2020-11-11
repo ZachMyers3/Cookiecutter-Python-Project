@@ -33,7 +33,9 @@ def test_content(response):
 def test_command_line_interface():
     """Test the CLI"""
     app = typer.Typer()
-    app.command()(main)
+    # the function that typer is running
+    # is also called command
+    app.command()(command)
 
     runner = CliRunner()
     result = runner.invoke(app, [])
