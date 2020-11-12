@@ -39,7 +39,7 @@ $ poetry run pytest
 $ ./scripts/build.ps1
 ```
 
-An executable should then be available at ```./dist/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}.exe
+An executable should then be available at ```./dist/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}.exe```
 
 ## Publishing Package to Local PyPi
 
