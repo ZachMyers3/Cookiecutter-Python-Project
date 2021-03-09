@@ -17,8 +17,6 @@ This package was created with [Cookiecutter](https://github.com/audreyr/cookiecu
 ```bash
 # install dependencies
 $ poetry install
-# run cli with script
-$ poetry run cli --help
 # run application cli interface without script
 $ poetry run python {{ cookiecutter.project_slug }}/cli.py --help
 ```
