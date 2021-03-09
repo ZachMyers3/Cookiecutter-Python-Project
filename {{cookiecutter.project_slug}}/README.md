@@ -37,6 +37,7 @@ $ poetry run pytest
 $ ./scripts/build.ps1
 ```
 
+<<<<<<< HEAD
 An executable should then be available at ```./dist/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}.exe```
 
 ## Publishing Package to Local PyPi
@@ -51,3 +52,6 @@ $ poetry publish -r wbc
 ```
 
 You can verify the list of packages after deployment [here](http://pypi.dokku2.woosterbrush.com/packages/).
+=======
+An executable should then be available at ```./dist/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}.exe
+>>>>>>> more qol changes
