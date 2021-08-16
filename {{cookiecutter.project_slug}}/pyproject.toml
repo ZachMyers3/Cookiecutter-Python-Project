@@ -54,7 +54,7 @@ classifiers=[
 packages = [
     { include = "{{ cookiecutter.project_underscore }}" },
     { include = "tests", format = "sdist" },
-{%- if cookiecutter.add_sqlalchemy_dependencies %}
+{%- if cookiecutter.add_sqlalchemy_dependencies == 'y' %}
 pymssql = [
         {path = "dependencies/pymssql-2.1.5-cp39-cp39-win_amd64.whl", markers = "sys_platform == 'win32'"},
         {path = "dependencies/pymssql-2.1.5-cp39-cp39-manylinux1_x86_64.whl", markers = "sys_platform == 'linux2'"}
