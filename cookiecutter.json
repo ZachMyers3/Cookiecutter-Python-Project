@@ -15,5 +15,6 @@
     "Apache-2.0",
     "GPL-3.0-only",
     "Not open source"
-  ]
+  ],
+  "add_sqlalchemy_dependencies": "Would you like too add sqlalchemy and its dependencies to the project?"
 }

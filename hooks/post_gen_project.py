@@ -10,6 +10,10 @@ def remove_file(filepath):
 
 if __name__ == '__main__':
 
+    if '{{ cookiecutter.add_sqlalchemy_dependencies }}' != 'y':
+        remove_file('dependencies')
+        remove_file('src/models')
+
     if '{{ cookiecutter.create_author_file }}' != 'y':
         remove_file('AUTHORS.rst')
         remove_file('docs/authors.rst')

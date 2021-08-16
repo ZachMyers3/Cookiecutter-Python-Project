@@ -18,7 +18,7 @@ This package was created with [Cookiecutter](https://github.com/audreyr/cookiecu
 # install dependencies
 $ poetry install
 # run application cli interface without script
-$ poetry run python {{ cookiecutter.project_slug }}/cli.py --help
+$ poetry run python src/cli.py --help
 ```
 
 ## Running Tests Using Pytest
@@ -39,19 +39,3 @@ $ ./scripts/build.ps1
 
 <<<<<<< HEAD
 An executable should then be available at ```./dist/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}.exe```
-
-## Publishing Package to Local PyPi
-
-```bash
-# add the local pypi repository to poetry
-$ poetry config repositories.wbc http://pypi.dokku2.woosterbrush.com/
-# build the wheels for publishing
-$ poetry build
-# publish to pypi specifying our new repository
-$ poetry publish -r wbc
-```
-
-You can verify the list of packages after deployment [here](http://pypi.dokku2.woosterbrush.com/packages/).
-=======
-An executable should then be available at ```./dist/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}.exe
->>>>>>> more qol changes
