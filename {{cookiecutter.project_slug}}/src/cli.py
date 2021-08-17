@@ -1,6 +1,6 @@
 import typer
 
-from {{ cookiecutter.project_underscore }} import main as {{ cookiecutter.project_underscore }}
+from {{ cookiecutter.project_underscore }} import {{ cookiecutter.project_underscore }}
 
 app = typer.Typer()
 
