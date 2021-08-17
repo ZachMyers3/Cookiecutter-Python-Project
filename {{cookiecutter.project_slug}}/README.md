@@ -36,6 +36,3 @@ $ poetry run pytest
 # run build script, pyinstaller is required
 $ ./scripts/build.ps1
 ```
-
-<<<<<<< HEAD
-An executable should then be available at ```./dist/{{ cookiecutter.project_slug }}/{{ cookiecutter.project_slug }}.exe```

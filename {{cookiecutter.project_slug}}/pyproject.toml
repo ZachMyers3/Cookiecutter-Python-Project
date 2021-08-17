@@ -54,6 +54,11 @@ classifiers=[
 packages = [
     { include = "{{ cookiecutter.project_underscore }}" },
     { include = "tests", format = "sdist" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6,<4.0"
+typer = "^0.3.1"
 {%- if cookiecutter.add_sqlalchemy_dependencies == 'y' %}
 pymssql = [
         {path = "dependencies/pymssql-2.1.5-cp39-cp39-win_amd64.whl", markers = "sys_platform == 'win32'"},
@@ -61,11 +66,6 @@ pymssql = [
     ]
 SQLAlchemy = "^1.4.22"
 {%- endif %}
-]
-
-[tool.poetry.dependencies]
-python = ">=3.6,<4.0"
-typer = "^0.3.1"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"
