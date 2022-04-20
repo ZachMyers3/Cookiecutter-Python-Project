@@ -52,7 +52,7 @@ classifiers=[
     'Programming Language :: Python :: 3.9',
 ]
 packages = [
-    { include = "{{ cookiecutter.project_underscore }}" },
+    { include = "{{ cookiecutter.project_underscore }}", from = "src" },
     { include = "tests", format = "sdist" },
 ]
 
