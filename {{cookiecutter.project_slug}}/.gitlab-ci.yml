@@ -52,11 +52,11 @@ stages:
 
 check-black:
     <<: *quality
-    script: poetry run black --check --config pyproject.toml src/{{ cookiecutter.project_underscore }}/
+    script: poetry run black --check --config pyproject.toml src/
 
 check-flake8:
     <<: *quality
-    script: poetry run flake8 src/{{ cookiecutter.project_underscore }}/ --count --select=E9,F63,F7,F82,F401 --show-source --statistics
+    script: poetry run flake8 src/ --count --select=E9,F63,F7,F82,F401 --show-source --statistics
 # Tests jobs ------------------------
 
 # python3.6:
