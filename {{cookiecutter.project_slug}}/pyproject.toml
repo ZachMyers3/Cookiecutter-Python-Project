@@ -78,3 +78,7 @@ pyinstaller = ">=4.5.1"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[[tool.poetry.source]]
+name = "wbc"
+url = "http://pypi.dokku2.woosterbrush.com/"
