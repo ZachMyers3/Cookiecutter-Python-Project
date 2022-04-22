@@ -19,11 +19,11 @@ if __name__ == '__main__':
 
     if '{{ cookiecutter.add_sqlalchemy_dependencies }}' != 'y':
         remove_folder(pathlib.Path('dependencies'))
-        remove_folder(pathlib.Path('src' / 'models'))
+        remove_folder(pathlib.Path('src/models'))
 
     if '{{ cookiecutter.create_author_file }}' != 'y':
         remove_file(pathlib.Path('AUTHORS.rst'))
-        remove_file(pathlib.Path('docs' / 'authors.rst'))
+        remove_file(pathlib.Path('docs/authors.rst'))
 
     if 'Not open source' == '{{ cookiecutter.open_source_license }}':
         remove_file(pathlib.Path('LICENSE'))
