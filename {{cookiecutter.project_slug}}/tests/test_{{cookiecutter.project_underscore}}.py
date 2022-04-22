@@ -6,7 +6,7 @@ import pytest
 import typer
 from typer.testing import CliRunner
 
-from {{ cookiecutter.project_underscore }} import {{ cookiecutter.project_underscore }}
+import {{ cookiecutter.project_underscore }}
 from {{ cookiecutter.project_underscore }}.cli import command
 
 
