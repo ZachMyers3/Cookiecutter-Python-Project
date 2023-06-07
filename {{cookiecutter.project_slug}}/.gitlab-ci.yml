@@ -25,7 +25,7 @@ stages:
 
 .quality-template: &quality
     <<: *install-deps
-    image: python:3.9
+    image: python:3.10
     stage: quality
 
 .test-template: &test
@@ -58,6 +58,10 @@ check-ruff:
 python3.9:
     <<: *test
     image: python:3.9
+
+python3.10:
+    <<: *test
+    image: python:3.10
 
 # Deploy jobs -----------------------
 
