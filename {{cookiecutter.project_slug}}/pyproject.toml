@@ -85,3 +85,8 @@ build-backend = "poetry.masonry.api"
 [[tool.poetry.source]]
 name = "wbc"
 url = "http://pypi.dokku2.woosterbrush.com/"
+priority = "primary"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "default"
