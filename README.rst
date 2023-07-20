@@ -23,7 +23,7 @@ Cookiecutter 1.4.0 or higher)::
 
 Generate a Python package project::
 
-    cookiecutter http://gitlab.woosterbrush.com/zachmyers/cookiecutter-python-package.git
+    cookiecutter http://gitlab.dokku2.woosterbrush.com/zachmyers/cookiecutter-python-package.git
 
 Then:
 
